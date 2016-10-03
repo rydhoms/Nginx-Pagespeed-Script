@@ -241,7 +241,7 @@ else
 	echo "Install Nginx Daemon . . ."
 # Get Nginx Daemon File
 cd /etc/init.d/
-wget https://gist.githubusercontent.com/rydhoms/487b906e03a0b745ffb738ae973d6ec7/raw/231d87698c9f2303a7491ffbe4622002426ad870/nginx
+wget https://raw.githubusercontent.com/rydhoms/Nginx-Pagespeed-Script/master/nginx
 chmod +x /etc/init.d/nginx
 # Back to ~
 cd
