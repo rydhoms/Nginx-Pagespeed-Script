@@ -1,5 +1,4 @@
 #! /bin/bash
-NGINX_VER=1.9.15
 . /lib/lsb/init-functions
  
 #------------------------------------------------------------------------------
@@ -13,7 +12,7 @@ PIDNAME="nginx"				#lets you do $PS-slave
 PIDFILE=$PIDNAME.pid                    #pid file
 PIDSPATH=/var/run
  
-DESCRIPTION="Nginx Server version ${NGINX_VER}"
+DESCRIPTION="Nginx Server"
  
 RUNAS=root                              #user to run as
  
