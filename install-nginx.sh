@@ -261,8 +261,8 @@ mkdir -p /var/cache/nginx/client_temp
 # Remove Nginx and Google Pagespeed Installation Files and Folders Include nginx-install.sh
 echo Clean Up Installation Files and Folders
 cd
-rm -r release-${NPS_VERSION}-beta.zip
-rm -r ngx_pagespeed-release-${NPS_VERSION}-beta
+rm -r v${NPS_VERSION}.zip
+rm -r ngx_pagespeed-${NPS_VERSION}
 rm -r nginx-${NGINX_VER}.tar.gz
 rm -r nginx-${NGINX_VER}
 rm -r install-nginx.sh
