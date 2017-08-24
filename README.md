@@ -6,4 +6,4 @@ Run Script
 
 Xenial Test
 
-    wget https://raw.githubusercontent.com/rydhoms/Nginx-Pagespeed-Script/master/install-nginx-xenial.sh && chmod +x install-nginx.sh && ./install-nginx-xenial.sh
+    wget https://raw.githubusercontent.com/rydhoms/Nginx-Pagespeed-Script/master/install-nginx-xenial.sh && chmod +x install-nginx-xenial.sh && ./install-nginx-xenial.sh
