@@ -239,7 +239,7 @@ make install
 mkdir /var/ngx_pagespeed_cache
 chown nginx:nginx /var/ngx_pagespeed_cache
 
-# Config Nginx Unit Systemd
+# Config Nginx Unit Systemd and Check
 Nginx_Unit="/lib/systemd/system/nginx.service"
 if [ -f "$Nginx_Unit" ]
 then
