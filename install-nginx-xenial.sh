@@ -123,6 +123,9 @@ echo Installation takes about 10-15 minutes
 # Update Upgrade OS
 apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get autoremove -y
 
+# Install nano as text editor
+apt-get install nano
+
 # Install dependency packages
 apt-get install build-essential zlib1g-dev libpcre3 libpcre3-dev unzip make curl libc6 libpcrecpp0v5 libssl1.0.0 libssl-dev zlib1g lsb-base openssl libssl-dev  libgeoip1 libgeoip-dev  google-perftools libgoogle-perftools-dev libperl-dev  libgd2-xpm-dev libatomic-ops-dev libxml2-dev libxslt1-dev python-dev -y
 
