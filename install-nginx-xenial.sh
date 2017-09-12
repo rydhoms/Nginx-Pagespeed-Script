@@ -236,6 +236,20 @@ make install
 mkdir /var/ngx_pagespeed_cache
 chown nginx:nginx /var/ngx_pagespeed_cache
 
+# Config Nginx Unit Systemd
+Nginx_Unit="/lib/systemd/system/nginx.service"
+if [ -f "$Nginx_Unit" ]
+then
+	echo "$Nginx_Unit found."
+else
+	echo "Nginx_Unit not found."
+	echo "Install Nginx_Unit . . ."
+# Get Nginx_Unit File
+cd /lib/systemd/system/
+wget https://raw.githubusercontent.com/rydhoms/Nginx-Pagespeed-Script/master/nginx.service
+chmod +x /lib/systemd/system/nginx.service
+sudo systemctl start nginx.service && sudo systemctl enable nginx.service
+
 Nginx_Daemon="/etc/init.d/nginx"
 if [ -f "$Nginx_Daemon" ]
 then
@@ -265,7 +279,7 @@ rm -r v${NPS_VERSION}.zip
 rm -r ngx_pagespeed-${NPS_VERSION}
 rm -r nginx-${NGINX_VER}.tar.gz
 rm -r nginx-${NGINX_VER}
-rm -r install-nginx.sh
+rm -r install-nginx-xenial.sh
 
 # Completed!!
 echo Installation Completed!!
