@@ -239,14 +239,6 @@ make install
 mkdir /var/ngx_pagespeed_cache
 chown nginx:nginx /var/ngx_pagespeed_cache
 
-# Config Nginx Unit Systemd and Check
-Nginx_Unit="/lib/systemd/system/nginx.service"
-if [ -f "$Nginx_Unit" ]
-then
-	echo "$Nginx_Unit found."
-else
-	echo "Nginx_Unit not found."
-	echo "Install Nginx_Unit . . ."
 # Get Nginx_Unit File
 cd /lib/systemd/system/
 wget https://raw.githubusercontent.com/rydhoms/Nginx-Pagespeed-Script/master/nginx.service
